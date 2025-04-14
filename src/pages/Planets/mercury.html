@@ -1,0 +1,261 @@
+<!--Edilson-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury</title>
+
+    <!--Sytle sheets and icon links-->
+    <link rel="icon" type="images/icon" href="../images/Mars.png">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../planets.css">
+
+    <!--Mercury Style body-->
+    <style>
+        /* Colour theme */
+        .mercuryHeader {
+            background-color: rgba(140, 140, 148, 0.7);
+        }
+
+        body .body {
+            border: 4px solid rgb(104, 105, 109);
+        }
+
+        /* Text */
+        ul {
+            margin-right: 20px;
+        }
+
+        .mercury-day .mercury-day-text {
+            margin-right: 20px;
+        }
+
+        /* Mercury Image */
+        .mercury-rotation {
+            display: grid;
+            grid-column: span;
+            width: 10vw;
+            max-width: 500px;
+            min-width: 200px;
+            height: auto;
+        }
+
+        .mercury-tail {
+            max-height: 20vw;
+        }
+
+        /* Flex */
+        .mercury-day {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <nav class="topNav">
+        <a href="/index.html"><div>Solar System</div></a>
+        <a id="selected"><div>Mercury</div></a>
+        <a href="/Planets/venus.html"><div>Venus</div></a>
+        <a href="/Planets/earth.html"><div>Earth</div></a>
+        <a href="/Planets/mars.html"><div>Mars</div></a>
+        <a href="/Planets/jupiter.html"><div>Jupiter</div></a>
+        <a href="/Planets/saturn.html"><div>Saturn</div></a>
+        <a href="/Planets/uranus.html"><div>Uranus</div></a>
+        <a href="/Planets/neptune.html"><div>Neptune</div></a>
+        <a href="/sources.html"><div>Sources</div></a>
+    </nav>
+
+    <!--Get time-->
+    <section id="time">Time Loading...</section>
+
+    <!--Dropdown Meu (Phone)-->
+    <div class="dropdown">
+        <button class="button">Menu</button>
+        <div class="content">
+            <a href="/index.html">Solar System</a>
+            <a><b>Mercury</b></a>
+            <a href="/Planets/venus.html">Venus</a>
+            <a href="/Planets/earth.html">Earth</a>
+            <a href="/Planets/mars.html">Mars</a> 
+            <a href="/Planets/jupiter.html">Jupiter</a> 
+            <a href="/Planets/saturn.html">Saturn</a> 
+            <a href="/Planets/uranus.html">Uranus</a> 
+            <a href="/Planets/neptune.html">Neptune</a>
+            <a href="/sources.html">Sources</a>
+        </div>
+    </div>
+
+    <!--Website Main Title-->
+    <header class="mercuryHeader">
+        <h1>Mercury</h1>
+    </header>
+
+    <!--Main Content-->
+    <div class="body">
+        <h2>Overview</h2>
+        <p>
+            Mercury is the <b>smallest</b> and <b>innermost</b> planet in the Solar System. It&apos;s also the closest planet to the
+            Sun, orbiting at an average distance of about <i>57.9 million km</i> (<i>36 million miles</i>).
+        </p>
+    </div>
+
+    <!--Facts-->
+    <div class="body">
+        <h2>Key Facts</h2>
+        <ul>
+            <li><strong>Diameter:</strong> ~4,880 km (~3,032 miles)</li>
+            <li><strong>Gravity:</strong> ~38% of Earth's gravity</li>
+            <li><strong>Atmosphere:</strong> barely has an atmosphere, just a thin exosphere made of oxygen, sodium,
+                hydrogen, helium, and potassium (<i>This means it can&apos;t retain heat</i>)</li>
+            <li><strong>Moons:</strong> Phobos & Deimos</li>
+            <li><strong>Temperature:</strong> <b>Extreme!</b>, Ranges from <i>-173&#8451;</i></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <h2>Fun Facts</h2>
+        <ul>
+            <li><b>A day on Mercury is Longer than its Year</b></li>
+            <ul>
+                <li>
+                    Mercury takes <i>88 Earth Days</i> to orbit the Sun but <i>176 Earth days</i> to complete one full day-night
+                    cycle. If you lived there, you&apos;d celebrate <b>two birthdays</b> before seeing one full sunrise-to-sunset
+                    day!
+                </li>
+            </ul>
+            <li><b>Mercury is shrinking</b></li>
+            <ul>
+                <li>
+                    The planet&apos;s core is cooling, causing Mercury to shrink over time. This has created <b>massive
+                    cliffs</b> (called lobate scarps) that are hundreds of kilometers long.
+                </li>
+            </ul>
+            <li><b>It has ice despite being the closest planet to the sun</b></li>
+            <ul>
+                <li>
+                    Mercury&apos;s polar craters, which never receive sunlight, have <b>frozen water</b> trapped inside.
+                    NASA&apos;s MESSENGER spacecraft found this <i>surprising discovery</i> in 2012.
+                </li>
+            </ul>
+            <li><b>Mercury has a tail like a comet</b></li>
+            <ul>
+                <li>
+                    Due to solar radiation, Mercury sheds atoms from its surface, creating a thin, glowing <b>tail of
+                    sodium gas</b> that extends millions of kilometers into space. It&apos;s invisible to the naked eye but
+                    can be detected with special instruments!
+                </li>
+            </ul>
+        </ul>
+    </div>
+
+    <!--Mercury Time-->
+    <div class="body">
+        <h2>Mercury&apos;s Day vs Year</h2>
+        <div class="mercury-day flex">
+            <ul class="mercury-day-text">
+                <li><b>Mercury&apos;s Rotation is Extremely slow</b></li>
+                <ul>
+                    <li>It takes <i>59 Earth days</i> for Mercury to complete one full spin on its axis.</li>
+                </ul>
+                <li><b>Mercury&apos;s Orbit is SUPER FAST</b></li>
+                <ul>
+                    <li>
+                        It zips around the sun in just <i>88 Earth days</i>, the shortest year of any planet in the solar
+                        system.
+                    </li>
+                </ul>
+                <li><b>3:2 Spin-Orbit Resonance</b></li>
+                <ul>
+                    <li>
+                        Unlike most planets, every <i>3 spins</i> Mercury does on its axis it completes <i>2 orbits</i> around the
+                        sun.
+                    </li>
+                </ul>
+            </ul>
+            <img class="mercury-rotation" src="https://woosterphysicists.scotblogs.wooster.edu/files/2018/05/Mercury7Loop.gif"
+                alt="mercury day vs year">
+        </div>
+    </div>
+    <div class="body">
+        <h2>Gallery</h2>
+        <section class="gallery">
+            <img class="mercury-ice"
+                src="https://www.researchgate.net/profile/Chuanfei-Dong/publication/329504378/figure/fig5/AS:701430671351808@1544245512960/Mercurys-polar-deposits-feature-large-expanses-of-exposed-water-ice-eg-Prokofiev.png"
+                alt="ice on mercury">
+            <img class="mercury-tail" src="https://dq0hsqwjhea1.cloudfront.net/Mercury_April-10_2023_06-resize-scaled.jpg"
+                alt="mercury comet-like tail">
+            <!--For gallery pics-->
+        </section>
+    </div>
+
+    <!--Bottom Navigation-->
+    <nav class="bottom">
+        <a class="mainLink" href="../index.html">
+            <h1>To Other Planets!</h1>
+        </a>
+        <ul class="navigate">
+            <li>&nbsp;Mercury&nbsp;|</li>
+            <li><a href="/Planets/venus.html"> Venus</a> |</li>
+            <li><a href="/Planets/earth.html">Earth</a> |</li>
+            <li><a href="/Planets/mars.html">Mars</a> |</li>
+            <li><a href="/Planets/jupiter.html">Jupiter</a> |</li>
+            <li><a href="/Planets/saturn.html">Saturn</a> |</li>
+            <li><a href="/Planets/uranus.html">Uranus</a> |</li>
+            <li><a href="/Planets/neptune.html">Neptune</a></li>
+        </ul>
+    </nav>
+
+    <!--Footer-->
+    <footer class="footermercury">
+        <div class="Solar Footer">
+            <p>
+                <span style="font-size: 150%;">
+                    <strong>Solar System Planets</strong>
+                </span> <br>
+                are truly majestic and fascinating, aren't they? There are still so many unknown things waiting
+                to be explored and discovered ahead of you! 🚀
+            </p>
+            <p id="lastUpdate"></p> <!--To get update time-->
+        </div>
+
+        <div class="Source Footer"><p>Explore Sources!</p>
+            <ul>
+                <li><a href="/sources.html#websites">Websites</a></li>
+                <li><a href="/sources.html#videos">Videos</a></li>
+                <li><a href="/sources.html#news">News Articles</a></li>
+            </ul>
+        </div>
+        <!--Static and clickable Images-->
+        <div class="Contact Footer"><p>Contact Us</p>
+            <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
+                <a href="https://www.instagram.com">
+                    <img src="/images/Instagram.png" alt="Instagram Logo">
+                    Instagram
+                </a>
+                <a href="https://discord.com">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source"
+                        alt="Discord Logo">
+                    Discord
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc"
+                        alt="Facebook Logo">
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Link to Javascript & get time-->
+    <script src="/time.js"></script>
+
+    <!--Get scrolling <nav> script-->
+    <script src="/scroll.js"></script>
+    
+</body>
+
+</html>

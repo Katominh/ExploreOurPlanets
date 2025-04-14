@@ -1,0 +1,443 @@
+/* Jason's Work */
+/*
+    This layout is for the general aesthetics and theme. 
+    It contains the most common element CSS that all/most websites will share.
+*/
+
+/* General & Box Sizing */
+* {
+    box-sizing: border-box;
+    /* for easier CSS layout */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Body Styling */
+body {
+    overscroll-behavior: none;
+    margin: 0;
+    width: fit-content;
+    background: #333333 url(/images/NightSky.png);
+}
+
+body,
+div,
+article,
+footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header and Headings */
+header {
+    background-color: #333333;
+    border-radius: 0 0 .5rem .5rem;
+    color: white;
+    font-size: 200%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 0;
+    animation: enlarge 1s -0.1s both;
+}
+
+header,
+h1,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 1px 1px 10px black;
+    animation: flyIn 1s;
+}
+
+h2 {
+    animation: flyIn 1s .25s both;
+}
+
+h3 {
+    color: rgb(0, 0, 62);
+    font-size: 1.5vw;
+}
+
+/* Div and Navigation Elements */
+div,
+nav.bottom {
+    margin: 1rem 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+nav.bottom:hover {
+    box-shadow: 1px 1px 10px wheat;
+}
+
+nav.bottom>a>h1 {
+    margin: 0 auto 1rem auto;
+}
+
+nav.bottom>p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 75%;
+}
+
+/* Background for Alternate Planets */
+.right,
+.left,
+body>div {
+    background-color: rgba(255, 250, 245, 0.96);
+    border: 4px solid rgb(0, 49, 81);
+}
+
+/* Images and Table Shadow */
+img,
+table {
+    box-shadow: 0 0 10px gray;
+}
+
+/* Text Sizing */
+p,
+li,
+dd,
+dt {
+    font-size: 1.3rem;
+}
+
+caption {
+    font-size: 1.1rem;
+    padding: .5rem 0;
+}
+
+/* Videos and Iframes */
+iframe {
+    border: 5px solid darkgoldenrod;
+    border-radius: 10px;
+    margin-bottom: 0;
+    min-height: 50vh;
+    height: 30vw;
+    min-width: 80vw;
+}
+
+/* Bottom Navigation */
+nav.bottom {
+    border: 4px double #e1a900;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
+    background-position: bottom;
+    background-size: 200%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* List Styling (for Bottom Navigation) */
+.navigate {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.navigate li a {
+    text-align: center;
+    padding-left: 3px;
+    transition: .3s;
+}
+
+
+/* Navigation Links */
+.navigate a {
+    color: darkblue;
+    transition: .3s;
+}
+
+.navigate a:hover {
+    color: white;
+    font-size: 110%;
+}
+
+.navigate a:active {
+    color: purple;
+}
+
+/* Bottom Main "To Other Planets" Link */
+.mainLink {
+    color: white;
+    text-decoration: none;
+}
+
+.mainLink:hover {
+    color: cyan;
+    font-size: 110%;
+}
+
+.mainLink:active {
+    color: darkblue;
+}
+
+/* Top Navigation Bar */
+nav.topNav {
+    display: flex;
+    background-color: rgba(13, 0, 47, 0.98);
+    width: 100%;
+    text-align: center;
+}
+
+nav.topNav>a {
+    text-decoration: none;
+    width: 10%;
+}
+
+nav.topNav>a>div {
+    border: 2px solid rgb(53, 149, 191);
+    border-bottom: 3px solid rgb(53, 149, 191);
+    height: 80px;
+    margin: 0;
+    border-radius: 0;
+    transition: .3s;
+    color: white;
+    vertical-align: center;
+}
+
+nav.topNav>a>div:hover {
+    background-color: rgb(42, 133, 172);
+    color: rgb(211, 255, 255);
+    font-size: 120%;
+}
+
+/* Selected Link (for Present Page) */
+a#selected>div {
+    background-color: rgb(0, 137, 196);
+    color: rgb(211, 255, 255);
+    font-size: 120%;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    all: unset;
+    /* Avoid CSS intended for other div */
+    display: none;
+    /* Hide for computer screen */
+    position: fixed;
+    transition: .3s;
+    top: 18px;
+    left: 0;
+    z-index: 10;
+    /* Appear on top other elements */
+}
+
+.dropdown button {
+    background-color: rgb(0, 137, 196);
+    border-radius: .2rem;
+    color: whitesmoke;
+    padding: 1rem 1rem;
+    transition: .3s;
+    border: none;
+}
+
+.dropdown:hover button {
+    background-color: rgb(44, 163, 214);
+}
+
+.dropdown .content {
+    /* For <div> containing the content */
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: rgb(200, 238, 255);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 5px 5px 10px rgb(100, 100, 100);
+    border-radius: .2rem;
+    z-index: 10;
+    /* Appear on top other elements */
+}
+
+.dropdown:hover .content,
+.dropdown:focus-within .content {
+    /* For phone tap */
+    display: block;
+}
+
+.dropdown a {
+    /* For dropdown links */
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: .3s;
+}
+
+.dropdown a:hover {
+    background-color: rgb(133, 201, 230);
+    color: whitesmoke;
+}
+
+/* General Footer */
+footer {
+    color: rgb(200, 200, 200);
+    display: flex !important;
+    background: rgb(58, 58, 58) url(https://static.scientificamerican.com/dam/m/57fc603972fdb/original/GettyImages-2166462891_WEB.jpg?m=1732209326.208&crop=4%3A3%2Csmart&w=1200) top;
+    border-radius: 10px 10px 0 0;
+    border: 4px solid gray;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* For <div> inside <footer> */
+.Footer {
+    all: unset;
+    color: rgb(200, 200, 200);
+    text-align: left;
+    float: left;
+    padding: .5rem 2rem;
+    transition: 0.5s;
+}
+
+.Footer p {
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.Footer:hover p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.Solar {
+    flex: 1.5;
+}
+
+.Source,
+.Contact {
+    flex: 1;
+    margin-top: 1rem;
+}
+
+/* Footer Links */
+.Footer a {
+    color: rgb(231, 231, 231);
+    transition: .5s;
+    display: flex;
+    align-items: center;
+}
+
+.Footer a:hover {
+    color: rgb(255, 233, 154);
+}
+
+.Footer a:active {
+    color: darkgoldenrod;
+}
+
+.Footer img {
+    width: 60px;
+    transition: .3s;
+    margin-left: 1rem;
+    margin-right: 8px;
+    border-radius: .5rem;
+}
+
+.Footer img:hover {
+    width: 70px;
+}
+
+/* Clock Styling */
+#time {
+    width: 100%;
+    background-color: rgb(0, 137, 196);
+    color: white;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes enlarge {
+    from {
+        padding-bottom: 0;
+    }
+
+    to {
+        padding-bottom: 10px;
+    }
+}
+
+@keyframes flyIn {
+    from {
+        opacity: 0;
+        transform: translate(0, -30px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes swipeIn {
+    from {
+        transform: translate(-100px, 0)
+    }
+
+    to {
+        transform: translate(0, 0)
+    }
+}
+
+/* Mobile phones (Hide weird navigation) */
+@media only screen and (max-width: 900px) {
+
+    /* Show Dropdown Menu instead of Top Navigation */
+    .dropdown {
+        display: inline-block;
+        animation: swipeIn .75s forwards;
+    }
+
+    nav.topNav {
+        display: none;
+    }
+
+    /* Footer --> Column */
+    footer,
+    .Contact>div>a {
+        flex-direction: column;
+    }
+
+    .Solar {
+        flex: 1;
+    }
+
+    .Footer {
+        margin-left: auto;
+        margin-right: auto;
+        padding: .5rem 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .Footer img {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+/* Hide Extraneous Structures on Phone */
+@media only screen and (max-width: 650px) {
+    .extra {
+        display: none !important;
+    }
+}
+
+/*HididngTop Nav when scrolling*/
+.topNav {
+    position: fixed;
+    z-index: 1;
+    transform: translateY(-80px);
+    transition: 0.25s ease transform;
+}
+
+/*Property to show top navigation bar*/
+.show {
+    transform: translateY(0px);
+}

@@ -1,0 +1,329 @@
+<!--Jason's Work-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+
+    <!--Links to stylesheet and icon-->
+    <link rel="icon" type="images/icon" href="../images/Earth.png">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../planets.css">
+
+    <!-- Webpage styling -->
+    <style>
+        /* Colour theme */
+        body>div {
+            border: 4px solid rgb(0, 111, 6);
+        }
+
+        header {
+            background-color: rgba(3, 151, 205, 0.7);
+        }
+
+        h2 {
+            color: rgb(31, 165, 249);
+        }
+
+        /* Earth Night Section */
+        .EarthNight {
+            color: lightgoldenrodyellow;
+            background: rgb(0, 9, 57) url(../images/EarthNight.png) top no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .EarthNight p {
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .EarthNight>h2+p {
+            margin-bottom: 50vh;
+        }
+
+        /* Responsive Phones */
+        @media only screen and (max-width: 850px) {
+            .EarthNight>h2+p {
+                margin: 1rem;
+            }
+
+            iframe {
+                min-height: 32vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation -->
+    <nav class="topNav">
+        <a href="/index.html"><div>Solar System</div></a>
+        <a href="/Planets/mercury.html"><div>Mercury</div></a>
+        <a href="/Planets/venus.html"><div>Venus</div></a>
+        <a id="selected"><div>Earth</div></a>
+        <a href="/Planets/mars.html"><div>Mars</div></a>
+        <a href="/Planets/jupiter.html"><div>Jupiter</div></a>
+        <a href="/Planets/saturn.html"><div>Saturn</div></a>
+        <a href="/Planets/uranus.html"><div>Uranus</div></a>
+        <a href="/Planets/neptune.html"><div>Neptune</div></a>
+        <a href="/sources.html"><div>Sources</div></a>
+    </nav>
+
+    <!--Get time-->
+    <section id="time">Time Loading...</section>
+
+    <!--Dropdown Meu (Phone)-->
+    <div class="dropdown">
+        <button class="button">Menu</button>
+        <div class="content">
+            <a href="/index.html">Solar System</a>
+            <a href="/Planets/mercury.html">Mercury</a>
+            <a href="/Planets/venus.html">Venus</a>
+            <a><b>Earth</b></a>
+            <a href="/Planets/mars.html">Mars</a>
+            <a href="/Planets/jupiter.html">Jupiter</a>
+            <a href="/Planets/saturn.html">Saturn</a>
+            <a href="/Planets/uranus.html">Uranus</a>
+            <a href="/Planets/neptune.html">Neptune</a>
+            <a href="/sources.html">Sources</a>
+        </div>
+    </div>
+
+    <!--Website Main Title-->
+    <header>
+        <h1>Earth</h1>
+    </header>
+
+    <!--Main Content-->
+    <div>
+        <h2>Overview</h2>
+        <p>
+            Earth is the <strong>3<sup>rd</sup> planet</strong> from the Sun and the only known planet to support life.
+            It has a diverse range of ecosystems and is home to millions of species of plants and animals. Earth is also
+            the only planet in the Solar System with <em>liquid water</em> on its surface, which is essential for life
+            as we know it.
+        </p>
+        <figure class="gallery">
+            <img src="https://www.worldatlas.com/r/w1200/upload/67/bc/2a/shutterstock-126712838.jpg"
+                alt="Marine Ecosystem">
+            <img src="https://spiritbear.com/wp-content/uploads/2019/08/image-72-oiam-1.jpg" alt="Forest Ecosystem"
+                class="extra">
+            <img src="https://www.antarctica.gov.au/site/assets/files/38665/phytoplankton.1600x0.jpg"
+                alt="Microscopic Ecosystem" class="extra">
+        </figure>
+    </div>
+
+    <!--Facts-->
+    <div>
+        <h2>Key Facts</h2>
+        <div class="flex">
+            <ul>
+                <li><strong>Distance from Sun:</strong> ~149.6 million km</li>
+                <li><strong>Orbital Period:</strong> ~365.24 days</li>
+                <li><strong>Rotation Period:</strong> ~24 hours</li>
+                <li><strong>Diameter:</strong> ~12,742 km</li>
+                <li><strong>Moons:</strong> 1 (<em>The Moon</em>)</li>
+                <br>
+            </ul>
+            <img src="https://science8sc.weebly.com/uploads/1/3/2/7/132773018/earth-revolution-gif_orig.gif"
+                alt="Earth's Orbit" style="flex: 2; width: 100%">
+        </div>
+    </div>
+
+    <div>
+        <h2>Fun Facts</h2>
+        <div class="flex">
+            <img src="https://assets.weforum.org/editor/Y_PY-SuflS7dEIMvw9OGsKwXzZhY9Z4wX55JDyO4zPo.jpeg"
+                alt="Earth's Altitude" style="width: 80%; max-width: 500px;">
+            <ul>
+                <br>
+                <li><strong>Earth</strong> is the only planet not named after a Roman or Greek god.</li>
+                <li><em>70% of Earth's surface</em> is covered in water.</li>
+                <li>Earth's atmosphere is composed of mostly <u>nitrogen</u> and <u>oxygen</u> with trace amounts of other gases.</li>
+                <li>The highest point on Earth is <em>Mount Everest</em>, which is 8,848 meters (29,029 feet) above sea level.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Composition Table-->
+    <div>
+        <h2>Earth Atmosphere Composition</h2>
+        <table>
+            <caption>Earth Atmosphere (in Percentage %)</caption>
+            <tr>
+                <th>Molecules</th>
+                <th>Composition Percentage</th>
+            </tr>
+            <tr>
+                <td>Nitrogen N<sub>2</sub></td>
+                <td>78.084%</td>
+            </tr>
+            <tr>
+                <td>Oxygen O<sub>2</sub></td>
+                <td>20.946%</td>
+            </tr>
+            <tr>
+                <td>Argon Ar</td>
+                <td>0.934%</td>
+            </tr>
+            <tr>
+                <td>Carbon Dioxide CO<sub>2</sub></td>
+                <td>0.042%</td>
+            </tr>
+            <tr>
+                <td>Other compounds (Ne, He, CH<sub>4</sub>, Kr, ...)</td>
+                <td>&lt; 0.001%</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Seasons-->
+    <div>
+        <h2>Earth's Seasons</h2>
+        <p>
+            All of us probably know that the seasons are cycling constantly year around due to the Earth's <strong>tilts</strong> and the
+            difference in sunlight concentration.
+            <br><br>
+            However, looking at this map below, isn't it feels like our planet is <em>breathing</em>?
+        </p>
+        <img src="https://www.visualcapitalist.com/wp-content/uploads/2022/01/Visualizing-Earths-Seasons.gif"
+            alt="Earth Changing Seasons GIF" style="width: 50%; min-width: 300px; text-align: center;">
+        <p style="margin-top: 0; margin-bottom: 0; font-size: 75%; text-align: center;">
+            &copy; Map by Eleanor Lutz 2022
+        </p>
+    </div>
+
+    <!--Map on Earth-->
+    <div class="extra">
+        <h2>Play with Google Earth Map</h2>
+        <p>
+            Let's explore the Earth with <u>3D Earth Map</u>, won't you? Select any places you want to wish and see all
+            of the <b>human ingenuity</b> and <b>natural beauty</b> of our planet!
+        </p>
+        <div style="text-align: center;">
+            <iframe src="https://earth3dmap.com" title="Google Earth Map" style="border-color: green; min-width: 70vw">
+                Something Went Wrong 😞 Sorry!
+            </iframe>
+        </div>
+    </div>
+
+    <!--Map at Night-->
+    <div class="EarthNight">
+        <h2 style="color: lightgoldenrodyellow;">Earth at Night!</h2>
+        <p>
+            <span>
+                Isn't it look so <strong>beautiful</strong>? This map shows the Earth at night, with the lights of
+                cities and towns visible even from space! It's amazing to see how much of the planet is lit up, and 
+                how different regions have different levels of light.
+            </span>
+        </p>
+        <p class="extra">
+            <span>
+                There are a lot of <em>fascinating</em> and <em>absurd</em> stories to be told from this map, don't you
+                think? Check this
+                video out! <br>
+            </span>
+        </p>
+        <iframe src="https://www.youtube.com/embed/ZYGd-llxHJE" title="How one NASA image tells dozens of stories"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            Something Went Wrong 😞 Sorry!
+        </iframe> <br>
+        <p class="extra" style="margin-top: 0; font-size: 75%; text-align: center;">
+            &copy; Video by neo 2019
+        </p>
+    </div>
+
+    <!--More Images-->
+    <div>
+        <h2>Gallery</h2>
+        <section class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/EpicEarth-Globespin-tilt-23.4.gif/1200px-EpicEarth-Globespin-tilt-23.4.gif"
+                alt="Earth from Wikipedia Spinning">
+            <img src="../images/Earth.png" alt="Earth Art">
+            <img src="../images/Earth.gif" alt="Earth GIF">
+            <img src="../images/EarthOrbit.gif" alt="Earth Orbiting the Sun">
+            <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWFydGglMjBtb29ufGVufDB8fDB8fHww"
+                alt="Earth from Moon">
+            <img src="https://science.nasa.gov/wp-content/uploads/2024/04/pale-blue-dot-revised.jpg"
+                alt="The Pale Blue Dot">
+        </section>
+        <p style="text-align: right; color: rgb(3, 151, 205); font-size: 75%; margin-bottom: 0; margin-top: 0;">
+            &uArr; Look! It's the <strong>Pale Blue Dot</strong>!
+        </p>
+    </div>
+
+    <!--Bottom Navigation-->
+    <nav class="bottom">
+        <a class="mainLink" href="../index.html">
+            <h1>To Other Planets!</h1>
+        </a>
+        <ul class="navigate">
+            <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
+            <li><a href="/Planets/venus.html"> Venus</a> |</li>
+            <li>&nbsp;Earth&nbsp;|</li>
+            <li><a href="/Planets/mars.html">Mars</a> |</li>
+            <li><a href="/Planets/jupiter.html">Jupiter</a> |</li>
+            <li><a href="/Planets/saturn.html">Saturn</a> |</li>
+            <li><a href="/Planets/uranus.html">Uranus</a> |</li>
+            <li><a href="/Planets/neptune.html">Neptune</a></li>
+        </ul>
+    </nav>
+
+    <!--Footer-->
+    <footer>
+        <div class="Solar Footer">
+            <p>
+                <span style="font-size: 150%;">
+                    <strong>Solar System Planets</strong>
+                </span> <br>
+                are truly majestic and fascinating, aren't they? There are still so many unknown things waiting
+                to be explored and discovered ahead of you! 🚀
+            </p>
+            <p id="lastUpdate"></p> <!--To get update time-->
+        </div>
+
+        <div class="Source Footer"><p>Explore Sources!</p>
+            <ul>
+                <li><a href="/sources.html#websites">Websites</a></li>
+                <li><a href="/sources.html#videos">Videos</a></li>
+                <li><a href="/sources.html#news">News Articles</a></li>
+            </ul>
+        </div>
+        <!--Static and clickable Images-->
+        <div class="Contact Footer"><p>Explore Sources!</p>
+            <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
+                <a href="https://www.instagram.com">
+                    <img src="/images/Instagram.png" alt="Instagram Logo">
+                    Instagram
+                </a>
+                <a href="https://discord.com">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source"
+                        alt="Discord Logo">
+                    Discord
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc"
+                        alt="Facebook Logo">
+                    Facebook
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--Link to Javascript & get time-->
+    <script src="/time.js"></script>
+
+    <!--Get scrolling <nav> script-->
+    <script src="/scroll.js"></script>
+    
+</body>
+
+</html>
